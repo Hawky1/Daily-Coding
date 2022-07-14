@@ -1,18 +1,28 @@
+
+/* Browser Resetting everything */
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/*Setting font for the Body and setting background color*/
 body {
   font-family: "Varela Round", sans-serif;
   background-color: #151630;
 }
 
 .form {
+  /*setting background gradient*/
   background-image: linear-gradient(#1391ff,#0145ff);
   width: 400px;
   height: 600px;
+  /*Setting position to absolute 
+  The element is removed from the normal document flow, 
+  and no space is created for the element in the page layout
+   It is positioned relative to its closest positioned ancestor, if any; 
+   otherwise, it is placed relative to the initial containing block
+   Its final position is determined by the values of top, right, bottom, and left.*/
   position: absolute;
   top:50%;
   left:50%;
@@ -25,7 +35,7 @@ body {
 
 .img-overlay::before {
   content: '';
-  background-image: url(https://cdn.pixabay.com/photo/2017/03/25/17/56/color-2174049_960_720.png);
+  background-image: url(https://cdn.pixabay.com/photo/2017/05/19/11/56/color-2326315_960_720.jpg);
   position: absolute;
   left: 0;
   top:0;
